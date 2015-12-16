@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<form name="mysolid" id="formMySolId" action="tdb.htm">
+		<label for="name">Name:</label>
+		<input id="name" name="name" autofocus="true" required="true" type="text"/>
+		
+		<label for="fone">Fone:</label>
+		<input id="fone" name="fone" required="true" type="text"/>
+		
+		<label for="country">Country</label>
+		<input id="country" name="Country" required="true" type="text"/>
+		
+		<label for="email">email</label>
+		<input id="email" name="email" required="true" type="email"/>
+		
+		<label for="size">Size</label>
+		<input id="size" name="size" required="true" type="text" list="sizes"/>
+		<datalist id="sizes">
+			<option value="XS">XS</option>
+			<option value="S">S</option>
+			<option value="M">M</option>
+			<option value="L">L</option>
+			<option value="XL">XL</option>
+			<option value="XXL">XXL</option>
+		</datalist>
+		
+		<label for="Observations">Observations</label>
+		<textarea id="Observations" name="Observations" cols="40" rows="8"></textarea>
+		
+		<input type="submit" value="Send" id="btnSend"/>
+		<input type="submit" value="Cancel" id="btnCancel"/>
+	</form>
+
+</body>
+</html>

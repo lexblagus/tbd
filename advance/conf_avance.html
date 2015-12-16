@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MySolID V2 beta 0.1</title>
+<script src="script/jquery.js" type="text/javascript"></script>
+<script src="script/conf.js"></script>
+<script>
+	var cores = "";
+
+	function getCores(){
+		alert(cores);
+	}
+</script>
+
+<style>
+  path:hover { opacity: 0.5; }
+</style>
+
+</head>
+<body>
+
+	<div>
+
+		<div class="glider_selector">
+
+			<div class="svg_main">
+			    <!-- Este PNG fica por cima com a sombra da vela -->
+				<!-- div class="SVGshadow" style="width: 470px; height: 343px;"><img src="img/76_shadow.png" border="0" /></div> -->
+				<div class="SVGGlider" style="width: 470px; height: 343px;">
+					<iframe height="343" allowtransparency="true" src="img/76.svg" id="svgFrame1" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no" width="100%"></iframe>
+				</div>
+			</div>
+
+			<!-- bloco para cores standard 
+				<div class="svg_color_select">
+					<div class="svg_color_sets"><div class="svg_color_functiontitle">Standard colours</div>  
+					    <script language="javascript">
+					     colorSetsArr["#ff7000,#ffffff,#00727a,#00727a"] = "pacific";
+					    </script>
+					    
+						<div class="svg_color_set cliclEventSets">
+							<div class="SVGitems_set svg_set_5" class="" layernr="5" style="width: 90px; height: 73px;"><iframe colorAttr="ff7000,ffffff,00727a,00727a" height="73" allowtransparency="true" src="/typo3conf/ext/th_advance_svg/res/76_set.svg" id="svgFrame_set_5" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no" width="90" height="73"> </iframe></div>
+							<div class="SVGtitle_set">pacific</div>
+						</div> 
+					</div>
+				</div> -->
+
+		</div>
+		<div style="clear: both;">
+			<br />
+		</div>
+
+		<!-- ################ Bloco para alteração do SVG #################### -->
+		<div class="svg_color_picker">
+			<div class="svg_color_functiontitle">Custom colours</div><!-- label para caixa de selecao de cores -->
+			
+			<!-- Seletor de cor do setor -->
+			<div class="svg_color_part_line" id="partnr_1">
+				<div class="svc_color_part">Leading Edge: <span id="svc_color_part_label_1"></span>
+					</div>
+						<a href="javascript:setSVGColour('#svgFrame1', 1, '#fed900')" style="background-color: #fed900;" colorAttr="#fed900" colorname="yellow">X</a>
+						<a href="javascript:setSVGColour('#svgFrame1', 1, '#c1cc26')" style="background-color: #c1cc26;" colorAttr="#c1cc26" colorname="lime">X</a>
+						<a href="javascript:setSVGColour('#svgFrame1', 1, '#77161a')" style="background-color: #77161a;" colorAttr="#77161a" colorname="bordeaux">X</a>
+						<a href="javascript:setSVGColour('#svgFrame1', 1, '#00727a')" style="background-color: #00727a;" colorAttr="#00727a" colorname="pacific">X</a>
+					<div style="clear: both;"></div>
+				</div>
+				<script language="javascript">svgColorsArr = ["00a0df","000000","0046ae","a96f3e","ffc82f","a5abaf","ff7000","a7b50a","ff1921","ffffff","fed900","77161a","00727a","c1cc26"];</script>
+			</div>
+			<!-- fim do seletor de cor -->
+		</div>
+		<!-- ################ Bloco para alteração do SVG #################### -->	
+
+		<div><br/><a href="javascript:setSVGStdColours('#svgFrame1', 'Ebene_', 'lotus_petroleo')">STD A</a></div>
+		<div><br/><a href="javascript:setSVGStdColours('#svgFrame1', 'Ebene_', 'lotus_xpto')">STD B</a></div>
+		<div><br/><a href="javascript:getCores()">Alert cores</a></div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MySolID V2 beta 0.1</title>
+<script src="script/jquery.js" type="text/javascript"></script>
+<script src="script/conf.js"></script>
+<script>
+	var cores = "";
+
+	function getCores(){
+		alert(cores);
+	}
+</script>
+
+<style>
+  path:hover { opacity: 0.5; }
+</style>
+
+</head>
+<body>
+
+	<div>
+
+		<div>
+			<iframe width="500" height="150" allowtransparency="true" src="img/sycross_open.svg" id="svgUpperCamber" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe>
+		</div>
+		<br />		
+		<div>
+			<iframe width="500" height="150" allowtransparency="true" src="img/sycross_open.svg" id="svgLowerCamber" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe>
+		</div>
+
+
+
+
+
+
+
+
+		<!-- ################ Bloco para alteração do SVG #################### -->
+		<div>
+			<!-- Seletor de cor do setor -->
+			<div>
+				<div>Upper Camber: <span id="svc_color_part_label_1"></span>
+					</div>
+						<a href="javascript:setSVGColor('#svgUpperCamber', 1, '#fed900')" style="background-color: #fed900;" colorAttr="#fed900" colorname="yellow">X</a>
+						<a href="javascript:setSVGColor('#svgUpperCamber', 1, '#c1cc26')" style="background-color: #c1cc26;" colorAttr="#c1cc26" colorname="lime">X</a>
+						<a href="javascript:setSVGColor('#svgUpperCamber', 1, '#77161a')" style="background-color: #77161a;" colorAttr="#77161a" colorname="bordeaux">X</a>
+						<a href="javascript:setSVGColor('#svgUpperCamber', 1, '#00727a')" style="background-color: #00727a;" colorAttr="#00727a" colorname="pacific">X</a>
+					<div style="clear: both;"></div>
+				</div>
+				<script language="javascript">svgColorsArr = ["00a0df","000000","0046ae","a96f3e","ffc82f","a5abaf","ff7000","a7b50a","ff1921","ffffff","fed900","77161a","00727a","c1cc26"];</script>
+			</div>
+			<!-- fim do seletor de cor -->
+		</div>
+		<!-- ################ Bloco para alteração do SVG #################### -->	
+		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_petroleo')">STD A</a></div>
+		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_xpto')">STD B</a></div>
+		<div><br/><a href="javascript:getCores()">Alert cores</a></div>	
+
+
+
+		<!-- ################ Bloco para alteração do SVG #################### -->
+		<div>
+			<!-- Seletor de cor do setor -->
+			<div class="svg_color_part_line" id="partnr_1">
+				<div class="svc_color_part">Lower Camber: <span id="svc_color_part_label_1"></span>
+					</div>
+						<a href="javascript:setSVGColor('#svgLowerCamber', 1, '#fed900')" style="background-color: #fed900;" colorAttr="#fed900" colorname="yellow">X</a>
+						<a href="javascript:setSVGColor('#svgLowerCamber', 1, '#c1cc26')" style="background-color: #c1cc26;" colorAttr="#c1cc26" colorname="lime">X</a>
+						<a href="javascript:setSVGColor('#svgLowerCamber', 1, '#77161a')" style="background-color: #77161a;" colorAttr="#77161a" colorname="bordeaux">X</a>
+						<a href="javascript:setSVGColor('#svgLowerCamber', 1, '#00727a')" style="background-color: #00727a;" colorAttr="#00727a" colorname="pacific">X</a>
+					<div style="clear: both;"></div>
+				</div>
+				<script language="javascript">svgColorsArr = ["00a0df","000000","0046ae","a96f3e","ffc82f","a5abaf","ff7000","a7b50a","ff1921","ffffff","fed900","77161a","00727a","c1cc26"];</script>
+			</div>
+			<!-- fim do seletor de cor -->
+		</div>
+		<!-- ################ Bloco para alteração do SVG #################### -->	
+
+		<div><br/><a href="javascript:setSVGStdColors('#svgLowerCamber', 'sector', 'lotus_petroleo')">STD A</a></div>
+		<div><br/><a href="javascript:setSVGStdColors('#svgLowerCamber', 'sector', 'lotus_xpto')">STD B</a></div>
+		<div><br/><a href="javascript:getCores()">Alert cores</a></div>
+
+</body>
+</html>
