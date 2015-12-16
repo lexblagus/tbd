@@ -7,9 +7,22 @@
 <script src="script/conf.js"></script>
 <script>
 	var cores = "";
-
+	/** verificar se será necessária esta função */
 	function getCores(){
 		alert(cores);
+	}
+
+	function te(){
+		alert("call TE");
+	}
+
+	/** Function to set standard colors */
+	function setSTDColors(){
+		var colors = ["lotus_petroleo", "lotus_xpto", "lotus_xpto2"];
+
+		for (var x=0; x < colors.length; x++){
+			setSVGStdColors('#'+colors[x], 'sector', colors[x]);
+		}
 	}
 </script>
 
@@ -18,24 +31,47 @@
 </style>
 
 </head>
-<body>
+<body onload="javascript:setSTDColors()">
 
 	<div>
 
-		<div>
+		<div>UPPER
 			<iframe width="500" height="150" allowtransparency="true" src="img/sycross_open.svg" id="svgUpperCamber" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe>
 		</div>
 		<br />		
-		<div>
+		<div>LOWER
 			<iframe width="500" height="150" allowtransparency="true" src="img/sycross_open.svg" id="svgLowerCamber" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe>
 		</div>
+		<br/>
+		<div>
+			<iframe width="500" height="400" allowtransparency="true" src="img/sycross_side.svg" id="svgSide" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe>
+		</div>
+		
+<br />
+
+
+<table id="table-1">
+	<thead>
+		<tr>
+			<th>Petroleo</th>
+			<th>XPTO 1</th>
+			<th>XPTO 2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td><iframe width="200" height="60" allowtransparency="true" src="img/sycross_side.svg" id="lotus_petroleo" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe></td>
+			<td><iframe width="200" height="60" allowtransparency="true" src="img/sycross_side.svg" id="lotus_xpto" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe></td>
+			<td><iframe width="200" height="60" allowtransparency="true" src="img/sycross_side.svg" id="lotus_xpto2" hspace="0" vspace="0" name="domain" style="border: 0px; background-color: transparent;"; align="center" frameborder="0" scrolling="no"></iframe></td>
+		</tr>
+	</tbody>
+</table>
 
 
 
 
 
-
-
+<br />
 
 		<!-- ################ Bloco para alteração do SVG #################### -->
 		<div>
@@ -54,9 +90,8 @@
 			<!-- fim do seletor de cor -->
 		</div>
 		<!-- ################ Bloco para alteração do SVG #################### -->	
-		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_petroleo')">STD A</a></div>
-		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_xpto')">STD B</a></div>
-		<div><br/><a href="javascript:getCores()">Alert cores</a></div>	
+		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_petroleo')">Petroleo</a></div>
+		<div><br/><a href="javascript:setSVGStdColors('#svgUpperCamber', 'sector', 'lotus_xpto')">XPTO1</a></div>
 
 
 
@@ -80,7 +115,7 @@
 
 		<div><br/><a href="javascript:setSVGStdColors('#svgLowerCamber', 'sector', 'lotus_petroleo')">STD A</a></div>
 		<div><br/><a href="javascript:setSVGStdColors('#svgLowerCamber', 'sector', 'lotus_xpto')">STD B</a></div>
-		<div><br/><a href="javascript:getCores()">Alert cores</a></div>
+		<div><br/><a href="javascript:setSTDColors()">Alert cores</a></div>
 
 </body>
 </html>

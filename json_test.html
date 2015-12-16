@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+var lotus = '{ "color_set" : ['+  
+				'{ "Petroleo" : [ { "SECTOR_ID":"1", "RGB":"#FF00CC", "PANTONE":"XXXX","TISSUE":"XYZ 00" },'+
+				'{ "SECTOR_ID":"2", "RGB":"#00CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"3", "RGB":"#0CF1F6", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"4", "RGB":"#F1CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"5", "RGB":"#CCCCFF", "PANTONE":"XZZX","TISSUE":"XYZ 02" } '+
+				'] },'+
+				'{ "XPTO1" : [ { "SECTOR_ID":"1", "RGB":"#FF00CC", "PANTONE":"XXXX","TISSUE":"XYZ 00" },'+
+				'{ "SECTOR_ID":"2", "RGB":"#00CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"3", "RGB":"#0CF1F6", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"4", "RGB":"#F1CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"5", "RGB":"#CCCCFF", "PANTONE":"XZZX","TISSUE":"XYZ 02" } '+
+				'] },'+
+				'{ "XPTO2" : [ { "SECTOR_ID":"1", "RGB":"#FF00CC", "PANTONE":"XXXX","TISSUE":"XYZ 00" },'+
+				'{ "SECTOR_ID":"2", "RGB":"#00CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"3", "RGB":"#0CF1F6", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"4", "RGB":"#F1CCFF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
+				'{ "SECTOR_ID":"5", "RGB":"#CCCCFF", "PANTONE":"XZZX","TISSUE":"XYZ 02" } '+
+				'] } ]}';
+
+function sa(){
+	var obj = JSON.parse(lotus);
+	alert(obj.color_set[0].);
+}
+
+
+
+</script>
+
+</head>
+<body onload="sa();">
+
+</body>
+</html>

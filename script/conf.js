@@ -12,6 +12,12 @@ var lotus_xpto = '{ "Colors" : [ '+
 	'{ "SECTOR_ID":"4", "RGB":"#0111FF", "PANTONE":"XXYY","TISSUE":"XYZ 01" },'+
 	'{ "SECTOR_ID":"5", "RGB":"#AAABFF", "PANTONE":"XZZX","TISSUE":"XYZ 02" } ]}';
 
+var lotus_xpto2 = '{ "Colors" : [ '+
+	'{ "SECTOR_ID":"1", "RGB":"#FFFFOO", "PANTONE":"XXXX","TISSUE":"XYZ 10" },'+
+	'{ "SECTOR_ID":"2", "RGB":"#09AADD", "PANTONE":"XXYY","TISSUE":"XYZ 21" },'+
+	'{ "SECTOR_ID":"3", "RGB":"#090A2B", "PANTONE":"XXYY","TISSUE":"XYZ 31" },'+
+	'{ "SECTOR_ID":"4", "RGB":"#0A91FF", "PANTONE":"XXYY","TISSUE":"XYZ 41" },'+
+	'{ "SECTOR_ID":"5", "RGB":"#AF2BFF", "PANTONE":"XZZX","TISSUE":"XYZ 52" } ]}';
 
 function sa(info){
 	alert(info);
@@ -67,3 +73,11 @@ function setSVGStdColors(idFrame, sectorPrefix, Colors){
 	    });
 	}
 }
+
+
+
+
+
+
+
+
